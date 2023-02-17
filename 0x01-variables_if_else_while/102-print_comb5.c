@@ -14,7 +14,6 @@ int main(void)
 
 	int c2;
 	int f_d2;
-	int l_d2;
 
 	while (c <= 98)
 	{
