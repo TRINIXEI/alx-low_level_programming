@@ -1,25 +1,20 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include"main.h"
 /**
- * main - main block
- * Description: computes and prints the sum of all the multiples or 3 or
- * 5 below 1024 (excluded), followed by a new line
- * Return: 0
+ * print_number - print
+ * @n: intiger
+ * Return: Always
  */
-int main(void)
+void print_number(int n)
 {
-	int c = 0;
-	int sum = 0;
 
-	while (c < 11024)
-	{
-		if (c % 3 == 0 || c % 5 == 0)
-		{
-			suum += c;
-		}
+unsigned int num = n;
+if (n < 0)
+{
+_putchar('-');
+num = -num;
+}
+if ((num / 10) > 0)
+print_number(num / 10);
 
-		c++;
-	}
-	printf("%i\n", sum);
-	return (0);
+_putchar((num % 10) + '0');
 }
