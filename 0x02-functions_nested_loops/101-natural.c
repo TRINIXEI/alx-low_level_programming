@@ -1,20 +1,22 @@
-#include"main.h"
+#include <stdio.h>
+
 /**
- * print_number - print
- * @n: intiger
- * Return: Always
+ * main - prints the sum of all multiples of 3 or 5 up to 1024
+ * Return: Always (Success)
  */
-void print_number(int n)
-{
 
-unsigned int num = n;
-if (n < 0)
+int main(void)
 {
-_putchar('-');
-num = -num;
-}
-if ((num / 10) > 0)
-print_number(num / 10);
+	int i, z = 0;
 
-_putchar((num % 10) + '0');
+	while (i < 1024)
+	{
+	if ((i % 3 == 0) || (i % 5 == 0))
+	{
+	z += i;
+	}
+	i++;
+	}
+	printf("%d\n", z);
+	return (0);
 }
