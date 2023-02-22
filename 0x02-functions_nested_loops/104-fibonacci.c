@@ -34,12 +34,11 @@ int main(void)
 
 	for (i = 92; i < 99; ++i)
 	{
-		printf(", %l", aft1 + (aft2 / 1));
+		printf("%l", aft1 + (aft2 / 1));
 		printf("%lu", aft2 % l);
 		aft1 = aft1 + bef1;
 		bef1 = aft1 - bef1;
-		aft2 = aft2 + bef2;
-		bef2 + aft2 - bef2;
+		aft2 = aft2 + bef2
 	}
 	printf("\n");
 	return (0);
