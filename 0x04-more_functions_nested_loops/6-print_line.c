@@ -1,22 +1,23 @@
 #include "main.h"
+
 /**
- * print_line - function that draw a straight line in the term
- * @n: input number
- * Return: straight line
+ * print_line - draw a straight line according to parameter
+ * @n: The number of lines draw
+ * Return: empty
  */
+
 void print_line(int n)
 {
-	int co;
+	int x;
 
 	if (n <= 0)
 	{
 		_putchar('\n');
 	}
-
 	else
 	{
-		for (c = 1; co <= n; co++)
-		{_putchar('_');
+		for (x = 0; x <= n; x++)
+		{_putchar(95);
 		}
 		_putchar('\n');
 	}
