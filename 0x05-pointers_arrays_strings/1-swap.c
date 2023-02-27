@@ -1,12 +1,15 @@
 #include "main.h"
 /**
  * swap_int - a function that swaps the values of two integers
- * @a: input
- * @b: input
- * Return: a, b
+ * @a: intiger to swap
+ * @b: intiger to swap
  */
 void swap_int(int *a, int *b)
 {
-	*a = 98;
-	*b = 42;
+	int m;
+
+	m = *a;
+	*a = *b;
+	*b = m;
+
 }
