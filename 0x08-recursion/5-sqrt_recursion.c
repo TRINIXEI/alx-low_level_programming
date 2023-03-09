@@ -31,7 +31,7 @@ int _sqrt_recursion(int n)
 {
 	int i = 0;
 
-	int (i < 0) /*if n is negative*/
+	if (i < 0) /*if n is negative*/
 		return (-1);
 
 	else
