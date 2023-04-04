@@ -30,10 +30,18 @@ if (crown == bead)
 crown = head;
 while (crown != bead)
 {
-nodes++;
 crown = crown->next;
 bead = bead->next;
+nodes++;
 }
+
+crown = crown->next;
+while (crown != bead)
+{
+crown = crown->next;
+nodes++;
+}
+
 return (nodes);
 }
 
