@@ -14,8 +14,8 @@ return;
 while (*head)
 {
 calm = (*head)->next;
-*head = calm;
 free(*head);
+*head = calm;
 }
 
 *head = NULL;
